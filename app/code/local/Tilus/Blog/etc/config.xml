@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Tilus_Blog>
+            <version>0.1.0</version>
+        </Tilus_Blog>
+    </modules>
+
+    <frontend>
+        <routers>
+            <blog_url>
+                <use>standard</use>
+                <args>
+                    <module>Tilus_Blog</module>
+                    <frontName>blogs</frontName> <!-- url link address -->
+                </args>
+            </blog_url>
+        </routers>
+
+        <layout>
+            <updates>
+                <tilus_blog>
+                    <file>tilus_blog.xml</file>
+                </tilus_blog>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <blocks>
+            <tilus_blog>
+                <class>Tilus_Blog_Block</class>
+            </tilus_blog>
+        </blocks>
+    </global>
+</config>

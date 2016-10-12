@@ -1,0 +1,12 @@
+<layout version="0.1.0">
+    <!--<default>-->
+        <!--<reference name="content"></reference>-->
+    <!--</default>-->
+
+    <tilus_blog_index_index>
+        <reference name="content">
+            <block name="tilus.blog.list" type="tilus_blog/list" template="tilus_blog/list.phtml" />
+        </reference>
+    </tilus_blog_index_index>
+
+</layout>
